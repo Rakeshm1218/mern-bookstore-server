@@ -8,8 +8,6 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static('public'))
-app.use(express.static('build'))
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = process.env.MONGO_URI;
