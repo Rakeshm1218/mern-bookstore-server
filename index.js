@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = process.env.MONGO_URI;
+const uri ="mongodb+srv://adminbookstore:bookstore123@bookstore.1uipqsa.mongodb.net/?retryWrites=true&w=majority&appName=Bookstore";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
