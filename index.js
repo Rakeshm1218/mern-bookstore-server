@@ -10,7 +10,6 @@ app.use(express.json());
 
 app.use(express.static('public'))
 app.use(express.static('build'))
-//mongodb config adminbookstore:bookstore123@bookstore
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = process.env.MONGO_URI;
@@ -100,7 +99,7 @@ async function run() {
     
     // Send a ping to confirm a successful connection
     await client.db('admin').command({ ping: 1 });
-    console.log('Pinged your deployment. You successfully connected to MongoDB!');
+    console.log('Pinged your deployment. You successfully connected to MongoDB!!!');
   }
 
 
@@ -120,6 +119,6 @@ run();
 
 // Listen to the specified port
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
+  console.log(`App listening on port ${port} `);
 });
 
